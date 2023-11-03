@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+          background-color: white;
+          text-align: center;
+          margin: 0;
+          padding-top: 60px;
+          display: flex;
+          flex-direction: column;
+          min-height: 100vh;
+        }
+
+        .header-container {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          margin: 0 auto; /* 가운데 정렬을 위한 margin 설정 */
+        }
+
+        header {
+          width: 70%;
+          display: flex;
+          justify-content: space-between;
+          padding: 10px;
+          background-color: white;
+          z-index: 1000;
+        }
+
+        button {
+          padding: 15px 20px;
+          margin: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+        }
+
+        #myPageBtn:hover {
+          background-color: #2980b9;
+        }
+
+        #cameraBtn {
+          background-color: white;
+          color: black;
+        }
+
+        #loginBtn:hover,
+        #signupBtn:hover {
+          background-color: #c0392b;
+        }
+
+        #redBtn:hover {
+          background-color: #e74c3c;
+        }
+
+        #greenBtn:hover {
+          background-color: #2ecc71;
+        }
+
+        #blueBtn:hover {
+          background-color: #3498db;
+        }
+
+        #bodyButtons {
+          flex: 1;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          align-items: center;
+          padding-top: 20px;
+        }
+
+        #bodyButtons button {
+          height: 200px;
+          width: 1000px; /* 이미지 크기를 직접 지정 */
+          background-size: cover;
+          background-position: center;
+        }
+
+        section {
+          width: 80%;
+          margin: 40px auto;
+          display: flex;
+          justify-content: space-around;
+        }
+
+        .section-button {
+          width: 70%;
+          padding: 15px 20px;
+          margin: 5px;
+        }
+
+        footer {
+          padding: 20px;
+        }
+
+        .color{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header-container">
+    <header>
+        <button id="myPageBtn" >마이페이지</button>
+        <button id="cameraBtn" >Camera</button>
+        <div>
+            <button id="loginBtn">로그인</button>
+            <button id="signupBtn">회원가입</button>
+        </div>
+    </header>
+</div>
+
+<section>
+    <button class="section-button">명</button>
+    <button class="section-button">지</button>
+    <button class="section-button">전</button>
+    <button class="section-button">문대</button>
+</section>
+
+<div id="bodyButtons">
+
+    <button id="redBtn" style="background-image: url('image/소니.jpg');"></button>
+    <button id="greenBtn" style="background-image: url('image/캐논.png');"></button>
+    <button id="blueBtn" style="background-image: url('image/폴라로이드.jpeg');"></button>
+    <button id="blueBtn" style="background-image: url('image/lg.jpeg');"></button>
+</div>
+
+
+
+<footer>
+    <div class="color">
+        <p>mjc 회사 | 대표전화번호: 010-1234-5678 | 후원자: 진용화 교수님</p>
+    </div>
+
+</footer>
+
+</body>
+</html>
